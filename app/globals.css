@@ -174,3 +174,28 @@ body {
         @apply font-sans;
     }
 }
+
+.fs-dot {
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 0 !important;
+    border-radius: 56px;
+    opacity: 1;
+    background: #c0cfdb;
+    cursor: pointer;
+    transition: width 200ms ease;
+}
+
+.fs-dot-active {
+    width: 32px;
+    height: 12px;
+    margin: 0 !important;
+    border-radius: 56px;
+    opacity: 1;
+    background: #043d6e;
+}
+
+.feature-slider-pagination .fs-dot {
+    margin: 0;
+}

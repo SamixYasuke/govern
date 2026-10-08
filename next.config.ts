@@ -15,6 +15,15 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  // images: {
+  //   remotePatterns: [
+  //     {
+  //       protocol: "http",
+  //       hostname: "commondatastorage.googleapis.com",
+  //       pathname: "/gtv-videos-bucket/**",
+  //     },
+  //   ],
+  // },
 };
 
 export default nextConfig;
