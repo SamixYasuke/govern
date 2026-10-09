@@ -5,6 +5,9 @@ import FeaturesSection from "./_components/FeaturesSection";
 import ClaritySection from "./_components/ClaritySection";
 import BuiltForScaleSection from "./_components/BuiltForScaleSection";
 import TestimonialsSection from "./_components/TestimonialsSection";
+import DesignSection from "./_components/DesignSection";
+import JoinOthers from "./_components/JoinOthers";
+import Footer from "./_components/Footer";
 
 export default function Home() {
   return (
@@ -17,7 +20,10 @@ export default function Home() {
         <ClaritySection />
         <BuiltForScaleSection />
         <TestimonialsSection />
+        <DesignSection />
+        <JoinOthers />
       </main>
+      <Footer />
     </>
   );
 }
