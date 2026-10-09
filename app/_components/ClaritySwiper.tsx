@@ -48,8 +48,8 @@ const slides: Slide[] = [
 
 const TextCard = ({ title, body }: { title: string; body: string }) => {
   return (
-    <article className="flex h-85 flex-col justify-between gap-8 rounded-[40px] bg-[#043D6E] p-10 text-white">
-      <h3 className="font-boldonse text-[20px] font-normal leading-10">
+    <article className="flex h-auto min-h-[320px] md:h-85 flex-col justify-between gap-8 rounded-[24px] md:rounded-[40px] bg-[#043D6E] p-6 md:p-10 text-white">
+      <h3 className="font-boldonse text-lg md:text-[20px] font-normal leading-8 md:leading-10 text-balance">
         {title}
       </h3>
 
@@ -82,7 +82,7 @@ const VideoCard = ({
   const isPlaying = playing && isVisible;
 
   return (
-    <div className="relative h-85.25 overflow-hidden rounded-[40px] bg-[#D9D9D9]">
+    <div className="relative h-auto min-h-[320px] md:h-85.25 overflow-hidden rounded-[24px] md:rounded-[40px] bg-[#D9D9D9]">
       {playing ? (
         <video
           src={src}
@@ -136,7 +136,12 @@ const ClaritySwiper = ({ swiperRef }: ClaritySwiperProps) => {
         }}
         modules={[Pagination, Autoplay]}
         slidesPerView="auto"
-        spaceBetween={16}
+        spaceBetween={12}
+        breakpoints={{
+          768: {
+            spaceBetween: 16,
+          },
+        }}
         grabCursor
         autoplay={{
           delay: 4000,
@@ -154,7 +159,9 @@ const ClaritySwiper = ({ swiperRef }: ClaritySwiperProps) => {
           <SwiperSlide
             key={i}
             className={
-              slide.type === "video" ? "h-85.25! w-149.75!" : "h-85! w-95.25!"
+              slide.type === "video"
+                ? "h-auto! w-[84vw]! max-w-[340px]! sm:w-[440px]! sm:max-w-none! md:h-85.25! md:w-149.75!"
+                : "h-auto! w-[76vw]! max-w-[300px]! sm:w-[340px]! sm:max-w-none! md:h-85! md:w-95.25!"
             }
           >
             {({ isVisible }) =>
@@ -173,7 +180,7 @@ const ClaritySwiper = ({ swiperRef }: ClaritySwiperProps) => {
         ))}
       </Swiper>
 
-      <div className="feature-slider-pagination relative z-10 mt-20 flex items-center gap-1.5" />
+      <div className="feature-slider-pagination relative z-10 mt-8 md:mt-20 flex items-center gap-1.5" />
     </>
   );
 };

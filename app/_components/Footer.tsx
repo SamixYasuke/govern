@@ -62,11 +62,11 @@ const footerLinks = {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#043D6E] pt-20 pb-60 px-30">
-      <div className="bg-[white] p-16 rounded-[40px] flex flex-col gap-12 max-w-249 mx-auto">
+    <footer className="bg-[#043D6E] pt-10 pb-10 px-4 sm:px-8 md:pt-20 md:pb-60 lg:px-30">
+      <div className="bg-[white] p-6 sm:p-8 md:p-16 rounded-[24px] md:rounded-[40px] flex flex-col gap-8 md:gap-12 max-w-249 mx-auto w-full">
         <div
           id="grid"
-          className="grid gap-10 grid-cols-4 place-content-center w-full"
+          className="grid gap-8 md:gap-10 grid-cols-2 md:grid-cols-4 place-content-center w-full"
         >
           {Object.entries(footerLinks).map(([title, items]) => (
             <div key={title} className="flex flex-col gap-6">
@@ -89,7 +89,7 @@ const Footer = () => {
           ))}
         </div>
         <div id="socials" className="flex flex-col gap-6">
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col sm:flex-row gap-4 sm:justify-between sm:items-center">
             <div>
               <Link
                 href={"/"}
@@ -101,8 +101,8 @@ const Footer = () => {
                 vern
               </Link>
             </div>
-            <div className="flex gap-4">
-              <div className="bg-[#F7F7F7] hover:bg-[#F7F7F7]/70 duration-75 ease-in-out transition-colors w-12 h-12 rounded-[100px] flex justify-center items-center">
+            <div className="flex gap-3 sm:gap-4 flex-wrap">
+              <div className="bg-[#F7F7F7] hover:bg-[#F7F7F7]/70 duration-75 ease-in-out transition-colors w-10 h-10 md:w-12 md:h-12 rounded-[100px] flex justify-center items-center">
                 <Link href={"#"}>
                   <Image
                     src="/icons/linkedin.svg"
@@ -113,7 +113,7 @@ const Footer = () => {
                   />
                 </Link>
               </div>
-              <div className="bg-[#F7F7F7] hover:bg-[#F7F7F7]/70 duration-75 ease-in-out transition-colors w-12 h-12 rounded-[100px] flex justify-center items-center">
+              <div className="bg-[#F7F7F7] hover:bg-[#F7F7F7]/70 duration-75 ease-in-out transition-colors w-10 h-10 md:w-12 md:h-12 rounded-[100px] flex justify-center items-center">
                 <Link href={"#"}>
                   <Image
                     src="/icons/tiktok.svg"
@@ -124,7 +124,7 @@ const Footer = () => {
                   />
                 </Link>
               </div>
-              <div className="bg-[#F7F7F7] hover:bg-[#F7F7F7]/70 duration-75 ease-in-out transition-colors w-12 h-12 rounded-[100px] flex justify-center items-center">
+              <div className="bg-[#F7F7F7] hover:bg-[#F7F7F7]/70 duration-75 ease-in-out transition-colors w-10 h-10 md:w-12 md:h-12 rounded-[100px] flex justify-center items-center">
                 <Link href={"#"}>
                   <Image
                     src="/icons/instagram.svg"
@@ -135,7 +135,7 @@ const Footer = () => {
                   />
                 </Link>
               </div>
-              <div className="bg-[#F7F7F7] hover:bg-[#F7F7F7]/70 duration-75 ease-in-out transition-colors w-12 h-12 rounded-[100px] flex justify-center items-center">
+              <div className="bg-[#F7F7F7] hover:bg-[#F7F7F7]/70 duration-75 ease-in-out transition-colors w-10 h-10 md:w-12 md:h-12 rounded-[100px] flex justify-center items-center">
                 <Link href={"#"}>
                   <Image
                     src="/icons/x.svg"
@@ -153,7 +153,7 @@ const Footer = () => {
             className="w-full max-w-217 border-t border-[#CDD8E2]"
           />
           <div id="law" className="flex flex-col gap-6">
-            <div id="hori" className="flex justify-between">
+            <div id="hori" className="flex flex-wrap gap-x-4 gap-y-2 md:justify-between">
               <div className="p-1 flex gap-1">
                 <Image
                   src="icons/uk-icon.svg"

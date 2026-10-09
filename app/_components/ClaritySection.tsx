@@ -14,11 +14,11 @@ const ClaritySection = () => {
   const swiperRef = useRef<SwiperType | null>(null);
 
   return (
-    <section className="w-full overflow-x-clip bg-[#F7F7F7] p-30">
-      <div className="flex flex-col gap-12">
-        <div className="max-w-249 flex items-center justify-between">
+    <section className="w-full overflow-x-clip bg-[#F7F7F7] px-5 py-10 sm:px-8 md:p-30">
+      <div className="flex flex-col gap-8 md:gap-12">
+        <div className="max-w-249 w-full flex flex-col sm:flex-row gap-4 sm:items-center justify-between">
           <div>
-            <h4 className="font-boldonse text-[32px] font-normal leading-16 text-[#171717]">
+            <h4 className="font-boldonse text-[26px] leading-11 sm:text-3xl md:text-[32px] font-normal md:leading-16 text-[#171717] text-balance">
               THE CLARITY YOU NEED
             </h4>
           </div>
@@ -27,7 +27,7 @@ const ClaritySection = () => {
             <button
               type="button"
               onClick={() => swiperRef.current?.slidePrev()}
-              className="h-12 w-12 cursor-pointer rounded-[100px] bg-white p-3 transition-colors duration-75 ease-in-out hover:bg-white/70"
+              className="h-10 w-10 md:h-12 md:w-12 cursor-pointer rounded-[100px] bg-white p-2.5 md:p-3 transition-colors duration-75 ease-in-out hover:bg-white/70"
               aria-label="Previous slide"
             >
               <HugeiconsIcon icon={ArrowLeft01Icon} />
@@ -36,7 +36,7 @@ const ClaritySection = () => {
             <button
               type="button"
               onClick={() => swiperRef.current?.slideNext()}
-              className="h-12 w-12 cursor-pointer rounded-[100px] bg-white p-3 transition-colors duration-75 ease-in-out hover:bg-white/70"
+              className="h-10 w-10 md:h-12 md:w-12 cursor-pointer rounded-[100px] bg-white p-2.5 md:p-3 transition-colors duration-75 ease-in-out hover:bg-white/70"
               aria-label="Next slide"
             >
               <HugeiconsIcon icon={ArrowRight01Icon} />

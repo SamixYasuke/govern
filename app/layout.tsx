@@ -35,7 +35,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         inter.variable,
       )}
     >
-      <body className="min-h-full w-full flex flex-col">{children}</body>
+      <body className="min-h-full w-full flex flex-col overflow-x-clip">{children}</body>
     </html>
   );
 }
