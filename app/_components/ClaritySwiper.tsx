@@ -37,7 +37,10 @@ const TextCard = ({ title, body }: { title: string; body: string }) => {
           {body}
         </p>
 
-        <div aria-hidden="true" className="relative mt-auto h-0.5 w-full rounded-[32px] bg-[#043D6E] bg-[linear-gradient(0deg,#043D6E,#043D6E),linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))]">
+        <div
+          aria-hidden="true"
+          className="relative mt-auto h-0.5 w-full rounded-[32px] bg-[#043D6E] bg-[linear-gradient(0deg,#043D6E,#043D6E),linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))]"
+        >
           <span className="absolute left-0 top-0 h-px w-1/4 bg-[#043D6E] bg-[linear-gradient(0deg,#043D6E,#043D6E),linear-gradient(0deg,rgba(255,255,255,0.2),rgba(255,255,255,0.2))]" />
         </div>
       </div>
@@ -164,7 +167,7 @@ const ClaritySwiper = ({ swiperRef }: ClaritySwiperProps) => {
         grabCursor
         autoplay={{
           delay: 4000,
-          disableOnInteraction: true,
+          disableOnInteraction: false,
         }}
         pagination={{
           el: ".feature-slider-pagination",
@@ -200,7 +203,10 @@ const ClaritySwiper = ({ swiperRef }: ClaritySwiperProps) => {
         ))}
       </Swiper>
 
-      <div aria-hidden="true" className="feature-slider-pagination relative z-10 mt-8 md:mt-20 flex items-center gap-1.5" />
+      <div
+        aria-hidden="true"
+        className="feature-slider-pagination relative z-10 mt-8 md:mt-20 flex items-center gap-1.5"
+      />
     </>
   );
 };
