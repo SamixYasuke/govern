@@ -31,6 +31,13 @@ function getByPath(obj: unknown, path: string): unknown {
     );
 }
 
+const localeTitles: Record<Locale, string> = {
+  en: "Govern — Global payments",
+  yo: "Govern — Isanwo agbaye",
+  ig: "Govern — Ịkwụ ụgwọ ụwa",
+  ha: "Govern — Biyan kuɗi na duniya",
+};
+
 export function LocaleProvider({
   locale,
   messages,
@@ -40,9 +47,10 @@ export function LocaleProvider({
   messages: Messages;
   children: ReactNode;
 }) {
-  // Keep <html lang> in sync for SEO + screen readers. Smooth: no reload needed.
+  // Keep <html lang> + <title> in sync for SEO + screen readers. Smooth: no reload needed.
   useEffect(() => {
     document.documentElement.lang = locale;
+    document.title = localeTitles[locale] ?? localeTitles.en;
     try {
       localStorage.setItem("govern-locale", locale);
     } catch {

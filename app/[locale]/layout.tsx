@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import { isValidLocale, locales, type Locale } from "@/i18n/config";
@@ -8,23 +9,10 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
-  const titles: Record<string, string> = {
-    en: "Govern — Global payments",
-    yo: "Govern — Isanwo agbaye",
-    ig: "Govern — Ịkwụ ụgwọ ụwa",
-    ha: "Govern — Biyan kuɗi na duniya",
-  };
-  return {
-    title: titles[locale] ?? titles.en,
-    description: "Spend, send, and manage money globally.",
-  };
-}
+export const metadata: Metadata = {
+  title: "Govern — Global payments",
+  description: "Spend, send, and manage money globally.",
+};
 
 export default async function LocaleLayout({
   children,
