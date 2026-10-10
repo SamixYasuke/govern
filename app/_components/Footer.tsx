@@ -175,7 +175,7 @@ const Footer = () => {
       </div>
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 z-20 select-none bottom-[calc(var(--fs)*0.04)]"
+        className="pointer-events-none absolute inset-x-0 z-20 select-none"
       >
         <p className="text-center font-boldonse font-normal leading-none tracking-[-0.02em] whitespace-nowrap text-[#114775] text-(length:--fs)">
           GO
