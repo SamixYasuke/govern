@@ -1,17 +1,10 @@
-import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
-import { defaultLocale, isValidLocale } from "@/i18n/config";
 
-export default async function RootPage() {
-  const cookieStore = await cookies();
-  const cookieLocale = cookieStore.get("govern-locale")?.value;
-  if (isValidLocale(cookieLocale)) redirect(`/${cookieLocale}`);
-
-  const accept = (await headers()).get("accept-language")
-    ?.split(",")[0]
-    ?.split("-")[0]
-    ?.toLowerCase();
-  if (isValidLocale(accept)) redirect(`/${accept}`);
-
-  redirect(`/${defaultLocale}`);
+// NOTE: `middleware.ts` intercepts "/" first and redirects to the user's
+// preferred locale (cookie → Accept-Language → default). This page only
+// exists as a static fallback so "/" can prerender; it never runs when
+// middleware is active. Keep it free of cookies()/headers() so the build
+// can statically prerender it under Cache Components.
+export default function RootPage() {
+  redirect("/en");
 }
