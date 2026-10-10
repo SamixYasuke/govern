@@ -24,7 +24,10 @@ type Slide =
 
 const TextCard = ({ title, body }: { title: string; body: string }) => {
   return (
-    <article className="flex h-auto min-h-[320px] md:h-85 flex-col justify-between gap-8 rounded-[24px] md:rounded-[40px] bg-[#043D6E] p-6 md:p-10 text-white">
+    <article
+      aria-roledescription="slide"
+      className="flex h-auto min-h-[320px] md:h-85 flex-col justify-between gap-8 rounded-[24px] md:rounded-[40px] bg-[#043D6E] p-6 md:p-10 text-white"
+    >
       <h3 className="font-boldonse text-lg md:text-[20px] font-normal leading-8 md:leading-10 text-balance">
         {title}
       </h3>
@@ -34,7 +37,7 @@ const TextCard = ({ title, body }: { title: string; body: string }) => {
           {body}
         </p>
 
-        <div className="relative mt-auto h-0.5 w-full rounded-[32px] bg-[#043D6E] bg-[linear-gradient(0deg,#043D6E,#043D6E),linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))]">
+        <div aria-hidden="true" className="relative mt-auto h-0.5 w-full rounded-[32px] bg-[#043D6E] bg-[linear-gradient(0deg,#043D6E,#043D6E),linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))]">
           <span className="absolute left-0 top-0 h-px w-1/4 bg-[#043D6E] bg-[linear-gradient(0deg,#043D6E,#043D6E),linear-gradient(0deg,rgba(255,255,255,0.2),rgba(255,255,255,0.2))]" />
         </div>
       </div>
@@ -68,23 +71,26 @@ const VideoCard = ({
           controls
           autoPlay={isPlaying}
           playsInline
+          aria-label={label}
           className="size-full object-cover"
         />
       ) : (
         <>
           <Image
             src={poster}
-            alt={label}
+            alt=""
+            aria-hidden="true"
             fill
             sizes="(min-width: 768px) 520px, 320px"
             className="object-cover"
           />
+          <span className="sr-only">{label}</span>
 
           <button
             type="button"
             aria-label={`${playLabel}: ${label}`}
             onClick={() => setPlaying(true)}
-            className="absolute inset-0 m-auto grid size-12 cursor-pointer place-items-center rounded-full bg-[#171717]/90 text-white transition-transform hover:scale-110"
+            className="absolute inset-0 m-auto grid size-12 cursor-pointer place-items-center rounded-full bg-[#171717]/90 text-white transition-transform hover:scale-110 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           >
             <svg
               viewBox="0 0 24 24"
@@ -142,6 +148,8 @@ const ClaritySwiper = ({ swiperRef }: ClaritySwiperProps) => {
     <>
       <Swiper
         key={playLabel}
+        aria-roledescription="carousel"
+        aria-label="Feature highlights"
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
         }}
@@ -192,7 +200,7 @@ const ClaritySwiper = ({ swiperRef }: ClaritySwiperProps) => {
         ))}
       </Swiper>
 
-      <div className="feature-slider-pagination relative z-10 mt-8 md:mt-20 flex items-center gap-1.5" />
+      <div aria-hidden="true" className="feature-slider-pagination relative z-10 mt-8 md:mt-20 flex items-center gap-1.5" />
     </>
   );
 };

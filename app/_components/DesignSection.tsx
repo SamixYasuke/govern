@@ -2,7 +2,8 @@ import Image from "next/image";
 
 const DesignSection = () => {
   return (
-    <section
+    <div
+      role="presentation"
       aria-hidden="true"
       className="py-10 px-5 sm:px-8 md:py-20 lg:px-30 bg-[#043D6E] h-20 sm:h-24 md:h-29.5 relative overflow-hidden"
     >
@@ -14,13 +15,14 @@ const DesignSection = () => {
               alt=""
               fill
               priority={false}
+              aria-hidden="true"
               className="h-full w-full object-cover pointer-events-none"
               sizes="100vw"
             />
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 

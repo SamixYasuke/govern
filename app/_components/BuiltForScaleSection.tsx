@@ -39,7 +39,7 @@ const ArchivementCard = ({
           {verifiedLabel}
         </p>
       </div>
-      <div className="md:hidden text-[#CDD8E2] shrink-0" aria-hidden="true">
+      <div aria-hidden="true" className="md:hidden text-[#CDD8E2] shrink-0">
         <svg viewBox="0 0 24 24" className="size-4" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
           <path d="M9 6l6 6-6 6" />
         </svg>
@@ -75,17 +75,23 @@ const BuiltForScaleSection = () => {
   ];
 
   return (
-    <section className="bg-white px-5 py-12 sm:px-8 md:p-30 w-full overflow-x-clip">
+    <section
+      aria-labelledby="scale-heading"
+      className="bg-white px-5 py-12 sm:px-8 md:p-30 w-full overflow-x-clip"
+    >
       <div className="flex flex-col gap-8 items-center w-full max-w-249 mx-auto">
         <div className="flex flex-col gap-3 justify-center items-center w-full">
           <span className="md:hidden inline-flex items-center gap-1.5 rounded-full bg-[#043D6E]/5 border border-[#043D6E]/10 px-3 py-1 font-geist text-[12px] font-medium tracking-wide text-[#043D6E]">
-            <span className="size-1.5 rounded-full bg-[#043D6E]" />
+            <span aria-hidden="true" className="size-1.5 rounded-full bg-[#043D6E]" />
             {t("scale.badge")}
           </span>
           <div>
-            <h4 className="font-boldonse font-normal text-[26px] leading-11 sm:text-3xl md:text-[32px] md:leading-16 text-center text-balance">
+            <h2
+              id="scale-heading"
+              className="font-boldonse font-normal text-[26px] leading-11 sm:text-3xl md:text-[32px] md:leading-16 text-center text-balance"
+            >
               {t("scale.title")}
-            </h4>
+            </h2>
           </div>
           <div className="w-full max-w-118 px-2 sm:px-0">
             <p className="font-geist text-[15px] sm:text-base leading-6 text-center text-[#5B6470] md:text-[#2F353C]">
@@ -93,19 +99,20 @@ const BuiltForScaleSection = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row items-stretch md:items-center gap-3 sm:gap-3.5 md:gap-6 md:justify-between w-full max-w-198 md:mx-auto">
-          {awards.map((award, index) => (
-            <ArchivementCard
-              key={index}
-              imgSrc={award.image}
-              alt={award.alt}
-              title={award.title}
-              verifiedLabel={t("scale.verified")}
-              height={award.height}
-              width={award.width}
-            />
+        <ul className="flex flex-col md:flex-row items-stretch md:items-center gap-3 sm:gap-3.5 md:gap-6 md:justify-between w-full max-w-198 md:mx-auto list-none m-0 p-0">
+          {awards.map((award) => (
+            <li key={award.title} className="min-w-0 flex-1">
+              <ArchivementCard
+                imgSrc={award.image}
+                alt={award.alt}
+                title={award.title}
+                verifiedLabel={t("scale.verified")}
+                height={award.height}
+                width={award.width}
+              />
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );
