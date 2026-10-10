@@ -1,39 +1,22 @@
+"use client";
+
 import Image from "next/image";
+import { useT } from "@/i18n/LocaleProvider";
 
 interface IArchivementCardProps {
   imgSrc: string;
   title: string;
+  alt: string;
+  verifiedLabel: string;
   width: number;
   height: number;
 }
 
-const awards = [
-  {
-    image: "/landing_page/customer-satisfaction-award.png",
-    alt: "govern customer-satisfaction",
-    width: 80,
-    height: 86,
-    title: "Customer Satisfaction — Gold",
-  },
-  {
-    image: "/landing_page/fintech-breakthrough.png",
-    alt: "govern fintech-breakthrough",
-    width: 92,
-    height: 80,
-    title: "Best Consumer Virtual Card 2025",
-  },
-  {
-    image: "/landing_page/consumer-award.png",
-    alt: "govern consumer-award",
-    width: 80,
-    height: 88,
-    title: "Consumer Guardian Badge",
-  },
-];
-
 const ArchivementCard = ({
   imgSrc = "",
   title = "",
+  alt = "",
+  verifiedLabel = "",
   width = 0,
   height = 0,
 }: IArchivementCardProps) => {
@@ -42,7 +25,7 @@ const ArchivementCard = ({
       <div className="bg-white md:bg-[#F7F7F7] w-16 h-16 sm:w-18 sm:h-18 md:w-40 md:h-40 rounded-2xl md:rounded-[64px] flex justify-center items-center shrink-0 shadow-[0_1px_2px_rgba(23,23,23,0.06)] md:shadow-none overflow-hidden">
         <Image
           src={imgSrc}
-          alt="govern fintech-breakthrough"
+          alt={alt}
           width={width}
           height={height}
           className="pointer-events-none w-10 h-10 sm:w-11 sm:h-11 md:w-auto md:h-auto object-contain"
@@ -53,7 +36,7 @@ const ArchivementCard = ({
           {title}
         </p>
         <p className="md:hidden font-geist font-normal text-[13px] leading-5 text-[#808080] mt-0.5">
-          Verified award
+          {verifiedLabel}
         </p>
       </div>
       <div className="md:hidden text-[#CDD8E2] shrink-0" aria-hidden="true">
@@ -66,23 +49,47 @@ const ArchivementCard = ({
 };
 
 const BuiltForScaleSection = () => {
+  const t = useT();
+  const awards = [
+    {
+      image: "/landing_page/customer-satisfaction-award.png",
+      alt: "govern customer-satisfaction",
+      width: 80,
+      height: 86,
+      title: t("scale.award1"),
+    },
+    {
+      image: "/landing_page/fintech-breakthrough.png",
+      alt: "govern fintech-breakthrough",
+      width: 92,
+      height: 80,
+      title: t("scale.award2"),
+    },
+    {
+      image: "/landing_page/consumer-award.png",
+      alt: "govern consumer-award",
+      width: 80,
+      height: 88,
+      title: t("scale.award3"),
+    },
+  ];
+
   return (
     <section className="bg-white px-5 py-12 sm:px-8 md:p-30 w-full overflow-x-clip">
       <div className="flex flex-col gap-8 items-center w-full max-w-249 mx-auto">
         <div className="flex flex-col gap-3 justify-center items-center w-full">
           <span className="md:hidden inline-flex items-center gap-1.5 rounded-full bg-[#043D6E]/5 border border-[#043D6E]/10 px-3 py-1 font-geist text-[12px] font-medium tracking-wide text-[#043D6E]">
             <span className="size-1.5 rounded-full bg-[#043D6E]" />
-            AWARDED & TRUSTED
+            {t("scale.badge")}
           </span>
           <div>
             <h4 className="font-boldonse font-normal text-[26px] leading-11 sm:text-3xl md:text-[32px] md:leading-16 text-center text-balance">
-              BUILT FOR SCALE. TRUSTED WORLDWIDE.
+              {t("scale.title")}
             </h4>
           </div>
           <div className="w-full max-w-118 px-2 sm:px-0">
             <p className="font-geist text-[15px] sm:text-base leading-6 text-center text-[#5B6470] md:text-[#2F353C]">
-              Govern is designed for individuals, teams, and global companies
-              that move money across borders every day.
+              {t("scale.subtitle")}
             </p>
           </div>
         </div>
@@ -91,7 +98,9 @@ const BuiltForScaleSection = () => {
             <ArchivementCard
               key={index}
               imgSrc={award.image}
+              alt={award.alt}
               title={award.title}
+              verifiedLabel={t("scale.verified")}
               height={award.height}
               width={award.width}
             />

@@ -1,0 +1,113 @@
+{
+  "header": {
+    "product": "Product",
+    "cards": "Cards",
+    "pricing": "Pricing",
+    "company": "Company",
+    "getStarted": "Get started",
+    "selectLanguage": "Select language",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "title": "YOUR MONEY. ONE CARD. TOTAL CONTROL.",
+    "subtitle": "Spend, send, and manage money globally — with clarity, security, and zero friction.",
+    "download": "Download the app",
+    "walletAlt": "Animated wallet on Govern hero section"
+  },
+  "features": {
+    "balanceTitle": "CARD BALANCE",
+    "balanceSub": "Updated in real time",
+    "addTitle": "ADD MONEY",
+    "addSub": "Top up in seconds",
+    "manageTitle": "MANAGE CARD",
+    "manageSub": "Customize instantly",
+    "recentsTitle": "RECENTS",
+    "recentsSub": "Instant records for payments"
+  },
+  "clarity": {
+    "title": "THE CLARITY YOU NEED",
+    "prev": "Previous slide",
+    "next": "Next slide",
+    "slide1Title": "SPEND GLOBALLY. FEEL LOCAL EVERYWHERE.",
+    "slide1Body": "See exactly what you're charged before you pay. No hidden rates. Whether it's Uber in Lagos or Spotify in London, Govern handles currency conversion transparently.",
+    "slide2Label": "Govern card demo",
+    "slide3Title": "EVERY TRANSACTION, EXPLAINED.",
+    "slide3Body": "No hidden charges. Clear conversions. See exactly where your money goes in, out, and beyond.",
+    "slide4Label": "Govern app walkthrough",
+    "playVideo": "Play video"
+  },
+  "meet": {
+    "title": "MEET THE GOVERN CARD",
+    "subtitle": "A digital-first card designed for modern payments. Track balances, manage spending, and stay in control, wherever you are.",
+    "cta": "Get a card",
+    "cardAlt": "Govern meet card pic"
+  },
+  "scale": {
+    "badge": "AWARDED & TRUSTED",
+    "title": "BUILT FOR SCALE. TRUSTED WORLDWIDE.",
+    "subtitle": "Govern is designed for individuals, teams, and global companies that move money across borders every day.",
+    "award1": "Customer Satisfaction — Gold",
+    "award2": "Best Consumer Virtual Card 2025",
+    "award3": "Consumer Guardian Badge",
+    "verified": "Verified award"
+  },
+  "testimonials": {
+    "title": "HEAR IT FROM OUR USERS",
+    "trustedPrefix": "Trusted by over",
+    "count": "25+ million",
+    "trustedSuffix": "users worldwide",
+    "from": "from",
+    "t1Bold": "Amazing app. Getting payments done in seconds",
+    "t1Text": "and not needing a physical card is pure joy.",
+    "t2Bold": "The card makes payments effortless",
+    "t2Text": "I barely carry a wallet anymore",
+    "t3Bold": "Used it seamlessly as a foreign exchange student.",
+    "t3Text": "I’d recommend it ten times over.",
+    "a1": "Hadassah",
+    "a2": "Malachi",
+    "a3": "Tiffany",
+    "s1": "App store",
+    "s2": "App store",
+    "s3": "Trust pilot"
+  },
+  "join": {
+    "prefix": "JOIN OVER 25 MILLION PEOPLE",
+    "highlight": "GOVERN",
+    "suffix": "ING THEIR MONEY BETTER",
+    "create": "Create your account",
+    "compare": "Compare pricing"
+  },
+  "footer": {
+    "products": "Products",
+    "company": "Company",
+    "support": "Support",
+    "legal": "Legal",
+    "cards": "Cards",
+    "payments": "Payments",
+    "pricing": "Pricing",
+    "about": "About",
+    "careers": "Careers",
+    "press": "Press",
+    "help": "Help center",
+    "contact": "Contact",
+    "security": "Security",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "uk": "United Kingdom",
+    "legalLinks": [
+      "Website terms",
+      "Legal agreements",
+      "Complaints",
+      "Privacy",
+      "Data privacy",
+      "Customer vulnerability"
+    ],
+    "disclosures": [
+      "Govern is a global payments and financial technology company providing multi-currency payment solutions for individuals and businesses worldwide.",
+      "Govern Ltd is registered in the United Kingdom and owns the Govern brand and associated trademarks, which are licensed to its subsidiaries and partners where applicable.",
+      "Govern does not operate as a bank. Banking and financial services are provided by licensed partner institutions in relevant jurisdictions. Funds held with partner banks may be eligible for protection under applicable local deposit insurance schemes, subject to specific terms and conditions.",
+      "Regulatory coverage, safeguards, and protections vary by country and product. Please review the applicable terms, disclosures, and regulatory information before using our services."
+    ]
+  }
+}

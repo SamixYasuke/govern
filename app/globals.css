@@ -50,6 +50,16 @@
 
     --animate-cloud-right: cloud-right 45s linear infinite;
     --animate-cloud-left: cloud-left 45s linear infinite;
+    --animate-design-pan: design-pan 30s linear infinite;
+
+    @keyframes design-pan {
+        from {
+            transform: translateX(-50%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
 
     @keyframes cloud-right {
         from {

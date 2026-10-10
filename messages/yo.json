@@ -1,0 +1,113 @@
+{
+  "header": {
+    "product": "Ọjà",
+    "cards": "Kaadi",
+    "pricing": "Idiyele",
+    "company": "Ile-iṣẹ",
+    "getStarted": "Bẹrẹ",
+    "selectLanguage": "Yan ede",
+    "openMenu": "Ṣi akojọ",
+    "closeMenu": "Pa akojọ"
+  },
+  "hero": {
+    "title": "OWO RẸ. KAADI KAN. IṢAKOSO KIKUN.",
+    "subtitle": "Na, firanṣẹ, ki o si ṣakoso owo ni agbaye — pẹlu mimọ, aabo, ati irọrun.",
+    "download": "Ṣe igbasilẹ app naa",
+    "walletAlt": "Apamọwọ alagbeka lori oju-iwe Govern"
+  },
+  "features": {
+    "balanceTitle": "IYE KAADI",
+    "balanceSub": "Imudojuiwọn ni akoko gidi",
+    "addTitle": "FI OWO KUN",
+    "addSub": "Fi owo kun ni iṣẹju-aaya",
+    "manageTitle": "ṢAKOSO KAADI",
+    "manageSub": "Ṣe atunṣe lẹsẹkẹsẹ",
+    "recentsTitle": "TITUN",
+    "recentsSub": "Akọsilẹ sisanwo lẹsẹkẹsẹ"
+  },
+  "clarity": {
+    "title": "MIMỌ TI O NILO",
+    "prev": "Ifaworanhan ti tẹlẹ",
+    "next": "Ifaworanhan ti nbọ",
+    "slide1Title": "NA NI AGBAYE. RILARA BI ENI TI O WA NILE.",
+    "slide1Body": "Wo ohun ti wọn gba ọ ṣaaju ki o to sanwo. Ko si owo pamọ. Boya Uber ni Eko tabi Spotify ni London, Govern n ṣakoso iyipada owo ni kedere.",
+    "slide2Label": "Ifihan kaadi Govern",
+    "slide3Title": "GBOGBO IDUNADURA, PELU ALAYE.",
+    "slide3Body": "Ko si idiyele pamọ. Iyipada kedere. Wo pato ibi ti owo rẹ n lọ.",
+    "slide4Label": "Irin app Govern",
+    "playVideo": "Mu fidio ṣiṣẹ"
+  },
+  "meet": {
+    "title": "PADI KAADI GOVERN",
+    "subtitle": "Kaadi oni-nọmba fun sisanwo ode-oni. Tọpa iye owo, ṣakoso inawo, ki o si ni iṣakoso nibikibi ti o ba wa.",
+    "cta": "Gba kaadi",
+    "cardAlt": "Aworan kaadi Govern"
+  },
+  "scale": {
+    "badge": "TI A FUN NI ẸBUN & TI A GBAJU",
+    "title": "TI A ṢE FUN IDAGBASOKE. TI A GBAJU NI AGBAYE.",
+    "subtitle": "A ṣe Govern fun awọn eniyan, ẹgbẹ, ati awọn ile-iṣẹ agbaye ti o n gbe owo kọja aala lojoojumọ.",
+    "award1": "Itẹlọrun Onibara — Wura",
+    "award2": "Kaadi Foju Onibara Ti O Dara Julọ 2025",
+    "award3": "Ami Olutọju Onibara",
+    "verified": "Ẹbun ti a fọwọsi"
+  },
+  "testimonials": {
+    "title": "GBỌ LATI ẸNU AWỌN OLUMULO WA",
+    "trustedPrefix": "Ti o ju",
+    "count": "milionu 25+",
+    "trustedSuffix": "awọn olumulo ni agbaye gbẹkẹle",
+    "from": "lati",
+    "t1Bold": "App iyanu. Sisanwo ni iṣẹju-aaya",
+    "t1Text": "ati pe ko nilo kaadi gidi jẹ ayọ pupọ.",
+    "t2Bold": "Kaadi naa mu sisanwo rọrùn",
+    "t2Text": "Emi ko fẹrẹ gbe apamọwọ mọ",
+    "t3Bold": "Lo o laisiyonu bi ọmọ ile-iwe paṣipaarọ.",
+    "t3Text": "Mo le ṣeduro rẹ ni igba mẹwa.",
+    "a1": "Hadassah",
+    "a2": "Malachi",
+    "a3": "Tiffany",
+    "s1": "Ile itaja App",
+    "s2": "Ile itaja App",
+    "s3": "Trust pilot"
+  },
+  "join": {
+    "prefix": "DARAPỌ MỌ JU MILIONU 25 ENIYAN",
+    "highlight": "GOVERN",
+    "suffix": "TI NWỌN N ṢAKOSO OWO WỌN DARA SI",
+    "create": "Ṣẹda akọọlẹ rẹ",
+    "compare": "Fi idiyele wéra"
+  },
+  "footer": {
+    "products": "Awọn ọjà",
+    "company": "Ile-iṣẹ",
+    "support": "Atilẹyin",
+    "legal": "Ofin",
+    "cards": "Kaadi",
+    "payments": "Sisanwo",
+    "pricing": "Idiyele",
+    "about": "Nipa wa",
+    "careers": "Iṣẹ",
+    "press": "Atẹjade",
+    "help": "Ile iranlọwọ",
+    "contact": "Kan si wa",
+    "security": "Aabo",
+    "privacy": "Asiri",
+    "terms": "Awọn ofin",
+    "uk": "Ilẹ Gẹẹsi",
+    "legalLinks": [
+      "Awọn ofin oju opo",
+      "Adehun ofin",
+      "Ẹdun",
+      "Asiri",
+      "Asiri data",
+      "Ailagbara onibara"
+    ],
+    "disclosures": [
+      "Govern jẹ ile-iṣẹ sisanwo ati imọ-ẹrọ owo agbaye ti o n pese ojutu sisanwo owo pupọ fun awọn eniyan ati iṣowo ni agbaye.",
+      "Govern Ltd wa ni Ilẹ Gẹẹsi ati pe o ni ami Govern ati awọn ami-iṣowo, ti a fun awọn ẹka ati alabaṣiṣẹpọ ni iwe-aṣẹ nibiti o ba wulo.",
+      "Govern ki i ṣiṣẹ bi banki. Awọn banki alabaṣiṣẹpọ ti o ni iwe-aṣẹ ni wọn n pese iṣẹ banki ni awọn agbegbe oriṣiriṣi. Owo ti a fi pamọ pẹlu awọn banki alabaṣiṣẹpọ le ni aabo labẹ eto iṣeduro idogo agbegbe, gẹgẹ bi awọn ofin.",
+      "Agbegbe ofin, aabo, ati idaabobo yatọ si orilẹ-ede ati ọjà. Jọwọ ka awọn ofin, ikede, ati alaye ofin ṣaaju lilo iṣẹ wa."
+    ]
+  }
+}

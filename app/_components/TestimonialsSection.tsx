@@ -1,39 +1,20 @@
+"use client";
+
 import Image from "next/image";
+import { useT, useLocaleContext } from "@/i18n/LocaleProvider";
 
 interface ITestimonialCard {
   flagSrc: string;
+  flagAlt: string;
   sourceIcon: string;
   reviewBold: string;
   reviewText: string;
   author: string;
 }
 
-const testimonials: ITestimonialCard[] = [
-  {
-    flagSrc: "/icons/south-africa-icon.svg",
-    reviewBold: "Amazing app. Getting payments done in seconds",
-    reviewText: "and not needing a physical card is pure joy.",
-    author: "Hadassah from App store",
-    sourceIcon: "/icons/appstore.svg",
-  },
-  {
-    flagSrc: "/icons/uk-icon.svg",
-    reviewBold: "The card makes payments effortless",
-    reviewText: "I barely carry a wallet anymore",
-    author: "Malachi from App store",
-    sourceIcon: "/icons/appstore.svg",
-  },
-  {
-    flagSrc: "/icons/nigeria-icon.svg",
-    reviewBold: "Used it seamlessly as a foreign exchange student.",
-    reviewText: "I’d recommend it ten times over.",
-    author: "Tiffany from Trust pilot",
-    sourceIcon: "/icons/star.svg",
-  },
-];
-
 const TestimonialCard = ({
   flagSrc = "",
+  flagAlt = "",
   sourceIcon = "",
   reviewText = "",
   reviewBold = "",
@@ -46,7 +27,7 @@ const TestimonialCard = ({
           <Image
             className="pointer-events-none"
             src={flagSrc}
-            alt="south africa icon"
+            alt={flagAlt}
             width={56}
             height={56}
           />
@@ -62,7 +43,7 @@ const TestimonialCard = ({
           <Image
             src={sourceIcon}
             className="pointer-events-none"
-            alt="apple-icon"
+            alt=""
             width={16}
             height={16}
           />
@@ -76,20 +57,51 @@ const TestimonialCard = ({
 };
 
 const TestimonialsSection = () => {
+  const t = useT();
+  const { t: translate } = useLocaleContext();
+  const from = translate("testimonials.from");
+
+  const testimonials: ITestimonialCard[] = [
+    {
+      flagSrc: "/icons/south-africa-icon.svg",
+      flagAlt: "South Africa",
+      reviewBold: t("testimonials.t1Bold"),
+      reviewText: t("testimonials.t1Text"),
+      author: `${t("testimonials.a1")} ${from} ${t("testimonials.s1")}`,
+      sourceIcon: "/icons/appstore.svg",
+    },
+    {
+      flagSrc: "/icons/uk-icon.svg",
+      flagAlt: "United Kingdom",
+      reviewBold: t("testimonials.t2Bold"),
+      reviewText: t("testimonials.t2Text"),
+      author: `${t("testimonials.a2")} ${from} ${t("testimonials.s2")}`,
+      sourceIcon: "/icons/appstore.svg",
+    },
+    {
+      flagSrc: "/icons/nigeria-icon.svg",
+      flagAlt: "Nigeria",
+      reviewBold: t("testimonials.t3Bold"),
+      reviewText: t("testimonials.t3Text"),
+      author: `${t("testimonials.a3")} ${from} ${t("testimonials.s3")}`,
+      sourceIcon: "/icons/star.svg",
+    },
+  ];
+
   return (
     <section className="px-5 py-12 sm:px-8 md:px-30 md:py-20 bg-white overflow-x-clip">
       <div className="flex flex-col gap-10 md:gap-16">
         <div className="flex flex-col gap-2 max-w-198 mx-auto w-full">
           <div>
             <h4 className="text-[#171717] font-boldonse text-[26px] leading-11 sm:text-3xl md:text-[32px] md:leading-16 text-center text-balance">
-              HEAR IT FROM OUR USERS
+              {t("testimonials.title")}
             </h4>
           </div>
           <div>
             <p className="text-[#2F353C] font-geist text-base leading-6 text-center">
-              Trusted by over{" "}
-              <span className="text-[#043D6E] font-bold">25+ million</span>{" "}
-              users worldwide
+              {t("testimonials.trustedPrefix")}{" "}
+              <span className="text-[#043D6E] font-bold">{t("testimonials.count")}</span>{" "}
+              {t("testimonials.trustedSuffix")}
             </p>
           </div>
         </div>
@@ -98,6 +110,7 @@ const TestimonialsSection = () => {
             <TestimonialCard
               key={index}
               flagSrc={testimonial.flagSrc}
+              flagAlt={testimonial.flagAlt}
               sourceIcon={testimonial.sourceIcon}
               reviewBold={testimonial.reviewBold}
               reviewText={testimonial.reviewText}

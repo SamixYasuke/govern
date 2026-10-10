@@ -1,0 +1,113 @@
+{
+  "header": {
+    "product": "Ngwaahịa",
+    "cards": "Kaadị",
+    "pricing": "Ọnụahịa",
+    "company": "Ụlọ ọrụ",
+    "getStarted": "Malite",
+    "selectLanguage": "Họrọ asụsụ",
+    "openMenu": "Mepee menu",
+    "closeMenu": "Mechie menu"
+  },
+  "hero": {
+    "title": "EGO GỊ. OTU KAADỊ. NJIKWA ZURU OKE.",
+    "subtitle": "Mefuo, ziga, ma jikwaa ego n'ụwa niile — na nghọta, nchekwa, na enweghị nsogbu.",
+    "download": "Budata ngwa ahụ",
+    "walletAlt": "Obere akpa na-agagharị na peeji Govern"
+  },
+  "features": {
+    "balanceTitle": "NGUZỌ KAADỊ",
+    "balanceSub": "Na-emelite ozugbo",
+    "addTitle": "TINYE EGO",
+    "addSub": "Tinye ego na sekọnd",
+    "manageTitle": "JIKWAA KAADỊ",
+    "manageSub": "Hazie ozugbo",
+    "recentsTitle": "NKE ỌHỤRỤ",
+    "recentsSub": "Ndekọ ịkwụ ụgwọ ozugbo"
+  },
+  "clarity": {
+    "title": "NGHỌTA Ị CHỌRỌ",
+    "prev": "Ihe mmịfe gara aga",
+    "next": "Ihe mmịfe na-esote",
+    "slide1Title": "MEFUO N'ỤWA NIILE. NWEE MMEṬỤTA ỤLỌ.",
+    "slide1Body": "Hụ ihe a na-ana gị tupu ị kwụọ ụgwọ. Enweghị ọnụego zoro ezo. Ma ọ bụ Uber na Lagos ma ọ bụ Spotify na London, Govern na-ejikwa mgbanwe ego n'ụzọ doro anya.",
+    "slide2Label": "Ngosi kaadị Govern",
+    "slide3Title": "AZỤMAAHỊA Ọ BỤLA, NA NKỌWA.",
+    "slide3Body": "Enweghị ụgwọ zoro ezo. Mgbanwe doro anya. Hụ kpọmkwem ebe ego gị na-aga.",
+    "slide4Label": "Njegharị ngwa Govern",
+    "playVideo": "Kpọọ vidiyo"
+  },
+  "meet": {
+    "title": "ZUTE KAADỊ GOVERN",
+    "subtitle": "Kaadị dijitalụ maka ịkwụ ụgwọ ọgbara ọhụrụ. Soro nguzọ, jikwaa mmefu, ma nọrọ na njikwa, ebe ọ bụla ị nọ.",
+    "cta": "Nweta kaadị",
+    "cardAlt": "Foto kaadị Govern"
+  },
+  "scale": {
+    "badge": "ENYERE ONYINYE & NTỤKWASỊ OBI",
+    "title": "EWURU MAKA MMẸBA. NTỤKWASỊ OBI N'ỤWA NIILE.",
+    "subtitle": "E mere Govern maka ndị mmadụ, otu, na ụlọ ọrụ ụwa na-ebugharị ego gafee oke kwa ụbọchị.",
+    "award1": "Afọ ojuju ndị ahịa — Ọla edo",
+    "award2": "Kaadị mebere nke kacha mma 2025",
+    "award3": "Baajị nche ndị ahịa",
+    "verified": "Onyinye enyochara"
+  },
+  "testimonials": {
+    "title": "NỤRỤ N'ỌNỤ NDỊ ỌRỤ ANYỊ",
+    "trustedPrefix": "Ihe karịrị",
+    "count": "nde 25+",
+    "trustedSuffix": "ndị ọrụ n'ụwa niile tụkwasịrị obi",
+    "from": "site na",
+    "t1Bold": "Ngwa dị ịtụnanya. Ime ịkwụ ụgwọ na sekọnd",
+    "t1Text": "na enweghị mkpa kaadị nkịtị bụ ọṅụ dị ọcha.",
+    "t2Bold": "Kaadị ahụ na-eme ka ịkwụ ụgwọ dị mfe",
+    "t2Text": "Anaghị m ebu obere akpa ọzọ",
+    "t3Bold": "Jiri ya nke ọma dị ka nwa akwụkwọ mgbanwe.",
+    "t3Text": "M ga-akwado ya ugboro iri.",
+    "a1": "Hadassah",
+    "a2": "Malachi",
+    "a3": "Tiffany",
+    "s1": "Ụlọ ahịa App",
+    "s2": "Ụlọ ahịa App",
+    "s3": "Trust pilot"
+  },
+  "join": {
+    "prefix": "SONYEERE IHE KARỊRỊ NDE MMADỤ 25",
+    "highlight": "GOVERN",
+    "suffix": "NA-EJIKWA EGO HA NKE ỌMA",
+    "create": "Mepụta akaụntụ gị",
+    "compare": "Tụlee ọnụahịa"
+  },
+  "footer": {
+    "products": "Ngwaahịa",
+    "company": "Ụlọ ọrụ",
+    "support": "Nkwado",
+    "legal": "Iwu",
+    "cards": "Kaadị",
+    "payments": "Ịkwụ ụgwọ",
+    "pricing": "Ọnụahịa",
+    "about": "Gbasara anyị",
+    "careers": "Ọrụ",
+    "press": "Mbipụta",
+    "help": "Ebe enyemaka",
+    "contact": "Kpọtụrụ anyị",
+    "security": "Nchekwa",
+    "privacy": "Nzuzo",
+    "terms": "Usoro",
+    "uk": "United Kingdom",
+    "legalLinks": [
+      "Usoro weebụsaịtị",
+      "Nkwekọrịta iwu",
+      "Mkpesa",
+      "Nzuzo",
+      "Nzuzo data",
+      "Adịghị ike ndị ahịa"
+    ],
+    "disclosures": [
+      "Govern bụ ụlọ ọrụ ịkwụ ụgwọ na teknụzụ ego zuru ụwa ọnụ na-enye ihe ngwọta ịkwụ ụgwọ ego dị iche iche maka ndị mmadụ na azụmaahịa n'ụwa niile.",
+      "Govern Ltd dị na United Kingdom ma nwe akara Govern na akara azụmaahịa, nke enyere ndị enyemaka na ndị mmekọ ikike ebe ọ dị mkpa.",
+      "Govern anaghị arụ ọrụ dị ka ụlọ akụ. Ụlọ akụ ndị mmekọ nwere ikike na-enye ọrụ ụlọ akụ na mpaghara dị iche iche. Ego echekwara na ụlọ akụ ndị mmekọ nwere ike ịnwe nchedo n'okpuru atụmatụ mkpuchi nkwụnye ego mpaghara, dabere na usoro.",
+      "Mkpuchi iwu, nchekwa, na nchedo dị iche site na obodo na ngwaahịa. Biko nyochaa usoro, ngosi, na ozi iwu tupu iji ọrụ anyị."
+    ]
+  }
+}

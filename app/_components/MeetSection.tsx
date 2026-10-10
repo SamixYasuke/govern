@@ -1,6 +1,10 @@
+"use client";
+
 import Image from "next/image";
+import { useT } from "@/i18n/LocaleProvider";
 
 const MeetSection = () => {
+  const t = useT();
   return (
     <section
       id="meet-section"
@@ -11,20 +15,18 @@ const MeetSection = () => {
           <div className="max-w-121.75 flex flex-col gap-2 w-full">
             <div>
               <h2 className="font-boldonse font-normal text-[26px] leading-11 sm:text-3xl sm:leading-13 md:text-[32px] text-center text-white md:leading-15.5 tracking-[0%] text-balance">
-                MEET THE GOVERN CARD
+                {t("meet.title")}
               </h2>
             </div>
             <div className="max-w-98 mx-auto w-full">
               <p className="font-geist font-normal text-base text-white leading-6 tracking-[0%] text-center px-2 sm:px-0">
-                A digital-first card designed for modern payments.  Track
-                balances, manage spending, and stay in control, wherever you
-                are.
+                {t("meet.subtitle")}
               </p>
             </div>
           </div>
           <div className="w-full flex justify-center items-center">
             <button className="font-geist font-medium text-base text-[#171717] leading-6 tracking-[-0.02em] bg-[#F7F7F7] rounded-[32px] py-3 px-8 border-2 border-white/20 cursor-pointer w-full max-w-[280px] sm:w-auto">
-              Get a card
+              {t("meet.cta")}
             </button>
           </div>
         </div>
@@ -34,7 +36,7 @@ const MeetSection = () => {
             width={414.0968933105469}
             height={232.40130615234375}
             src="/icons/card.png"
-            alt="Govern meet card pic"
+            alt={t("meet.cardAlt")}
             sizes="(max-width: 768px) 320px, 414px"
           />
         </div>

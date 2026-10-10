@@ -1,10 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
+import { useT } from "@/i18n/LocaleProvider";
 
 import "swiper/css";
 
@@ -20,31 +21,6 @@ type Slide =
       poster: string;
       label: string;
     };
-
-const slides: Slide[] = [
-  {
-    type: "text",
-    title: "SPEND GLOBALLY. FEEL LOCAL EVERYWHERE.",
-    body: "See exactly what you're charged before you pay. No hidden rates. Whether it's Uber in Lagos or Spotify in London, Govern handles currency conversion transparently.",
-  },
-  {
-    type: "video",
-    src: "https://lorem.video/hls/corgi/",
-    poster: "/landing_page/thumbnail.png",
-    label: "Govern card demo",
-  },
-  {
-    type: "text",
-    title: "EVERY TRANSACTION, EXPLAINED.",
-    body: "No hidden charges. Clear conversions. See exactly where your money goes in, out, and beyond.",
-  },
-  {
-    type: "video",
-    src: "https://lorem.video/hls/cat/",
-    poster: "/landing_page/thumbnail.png",
-    label: "Govern app walkthrough",
-  },
-];
 
 const TextCard = ({ title, body }: { title: string; body: string }) => {
   return (
@@ -70,11 +46,13 @@ const VideoCard = ({
   src,
   poster,
   label,
+  playLabel,
   isVisible,
 }: {
   src: string;
   poster: string;
   label: string;
+  playLabel: string;
   isVisible: boolean;
 }) => {
   const [playing, setPlaying] = useState(false);
@@ -104,7 +82,7 @@ const VideoCard = ({
 
           <button
             type="button"
-            aria-label={`Play video: ${label}`}
+            aria-label={`${playLabel}: ${label}`}
             onClick={() => setPlaying(true)}
             className="absolute inset-0 m-auto grid size-12 cursor-pointer place-items-center rounded-full bg-[#171717]/90 text-white transition-transform hover:scale-110"
           >
@@ -128,9 +106,42 @@ type ClaritySwiperProps = {
 };
 
 const ClaritySwiper = ({ swiperRef }: ClaritySwiperProps) => {
+  const t = useT();
+
+  const slides: Slide[] = useMemo(
+    () => [
+      {
+        type: "text",
+        title: t("clarity.slide1Title"),
+        body: t("clarity.slide1Body"),
+      },
+      {
+        type: "video",
+        src: "https://lorem.video/hls/corgi/",
+        poster: "/landing_page/thumbnail.png",
+        label: t("clarity.slide2Label"),
+      },
+      {
+        type: "text",
+        title: t("clarity.slide3Title"),
+        body: t("clarity.slide3Body"),
+      },
+      {
+        type: "video",
+        src: "https://lorem.video/hls/cat/",
+        poster: "/landing_page/thumbnail.png",
+        label: t("clarity.slide4Label"),
+      },
+    ],
+    [t],
+  );
+
+  const playLabel = t("clarity.playVideo");
+
   return (
     <>
       <Swiper
+        key={playLabel}
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
         }}
@@ -157,7 +168,7 @@ const ClaritySwiper = ({ swiperRef }: ClaritySwiperProps) => {
       >
         {slides.map((slide, i) => (
           <SwiperSlide
-            key={i}
+            key={`${i}-${slide.type === "text" ? slide.title : slide.label}`}
             className={
               slide.type === "video"
                 ? "h-auto! w-[84vw]! max-w-[340px]! sm:w-[440px]! sm:max-w-none! md:h-85.25! md:w-149.75!"
@@ -172,6 +183,7 @@ const ClaritySwiper = ({ swiperRef }: ClaritySwiperProps) => {
                   src={slide.src}
                   poster={slide.poster}
                   label={slide.label}
+                  playLabel={playLabel}
                   isVisible={isVisible}
                 />
               )

@@ -5,6 +5,7 @@ import { HugeiconsIcon } from "@hugeicons/react";
 import dynamic from "next/dynamic";
 import { useRef } from "react";
 import type { Swiper as SwiperType } from "swiper";
+import { useT } from "@/i18n/LocaleProvider";
 
 const ClaritySwiper = dynamic(() => import("./ClaritySwiper"), {
   ssr: false,
@@ -12,6 +13,7 @@ const ClaritySwiper = dynamic(() => import("./ClaritySwiper"), {
 
 const ClaritySection = () => {
   const swiperRef = useRef<SwiperType | null>(null);
+  const t = useT();
 
   return (
     <section className="w-full overflow-x-clip bg-[#F7F7F7] px-5 py-10 sm:px-8 md:p-30">
@@ -19,7 +21,7 @@ const ClaritySection = () => {
         <div className="max-w-249 w-full flex flex-col sm:flex-row gap-4 sm:items-center justify-between">
           <div>
             <h4 className="font-boldonse text-[26px] leading-11 sm:text-3xl md:text-[32px] font-normal md:leading-16 text-[#171717] text-balance">
-              THE CLARITY YOU NEED
+              {t("clarity.title")}
             </h4>
           </div>
 
@@ -28,7 +30,7 @@ const ClaritySection = () => {
               type="button"
               onClick={() => swiperRef.current?.slidePrev()}
               className="h-10 w-10 md:h-12 md:w-12 cursor-pointer rounded-[100px] bg-white p-2.5 md:p-3 transition-colors duration-75 ease-in-out hover:bg-white/70"
-              aria-label="Previous slide"
+              aria-label={t("clarity.prev")}
             >
               <HugeiconsIcon icon={ArrowLeft01Icon} />
             </button>
@@ -37,7 +39,7 @@ const ClaritySection = () => {
               type="button"
               onClick={() => swiperRef.current?.slideNext()}
               className="h-10 w-10 md:h-12 md:w-12 cursor-pointer rounded-[100px] bg-white p-2.5 md:p-3 transition-colors duration-75 ease-in-out hover:bg-white/70"
-              aria-label="Next slide"
+              aria-label={t("clarity.next")}
             >
               <HugeiconsIcon icon={ArrowRight01Icon} />
             </button>

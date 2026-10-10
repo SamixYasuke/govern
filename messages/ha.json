@@ -1,0 +1,113 @@
+{
+  "header": {
+    "product": "Samfur",
+    "cards": "Kati",
+    "pricing": "Farashi",
+    "company": "Kamfani",
+    "getStarted": "Fara",
+    "selectLanguage": "Zaɓi harshe",
+    "openMenu": "Buɗe menu",
+    "closeMenu": "Rufe menu"
+  },
+  "hero": {
+    "title": "KUƊIN KA. KATI ƊAYA. CIKAKKEN IKON.",
+    "subtitle": "Kashe, aika, da sarrafa kuɗi a duniya — da tsabta, tsaro, da sauƙi.",
+    "download": "Zazzage manhajar",
+    "walletAlt": "Jakar kuɗi mai motsi a shafin Govern"
+  },
+  "features": {
+    "balanceTitle": "RAGOWAR KATI",
+    "balanceSub": "Ana sabuntawa nan take",
+    "addTitle": "ƘARA KUƊI",
+    "addSub": "Ƙara kuɗi cikin daƙiƙa",
+    "manageTitle": "SARRAFA KATI",
+    "manageSub": "Keɓance nan take",
+    "recentsTitle": "KWANAN NAN",
+    "recentsSub": "Bayanan biya nan take"
+  },
+  "clarity": {
+    "title": "TSABTAR DA KAKEBUKATA",
+    "prev": "Zamewa ta baya",
+    "next": "Zamewa ta gaba",
+    "slide1Title": "KASHE A DUNIYA. JI KAMAR GIDA.",
+    "slide1Body": "Duba abin da za a caje ka kafin ka biya. Babu ɓoyayyun farashi. Ko Uber ne a Legas ko Spotify a Landan, Govern na sarrafa musayar kuɗi a bayyane.",
+    "slide2Label": "Nunin katin Govern",
+    "slide3Title": "KOWACE MA'AMALA, DA BAYANI.",
+    "slide3Body": "Babu ɓoyayyun caji. Musaya a bayyane. Duba daidai inda kuɗin ka ke zuwa.",
+    "slide4Label": "Yawon manhajar Govern",
+    "playVideo": "Kunna bidiyo"
+  },
+  "meet": {
+    "title": "HADU DA KATIN GOVERN",
+    "subtitle": "Kati na zamani don biyan kuɗi na yau. Bibiyi ragowa, sarrafa kashewa, kuma ka kasance cikin iko, duk inda kake.",
+    "cta": "Samu kati",
+    "cardAlt": "Hoton katin Govern"
+  },
+  "scale": {
+    "badge": "AN BA LAMBA & AMINCEWA",
+    "title": "AN GINA DON FAƊAƊA. AMINCEWA A DUNIYA.",
+    "subtitle": "An tsara Govern don mutane, ƙungiyoyi, da kamfanonin duniya waɗanda ke motsa kuɗi ta kan iyakoki kullum.",
+    "award1": "Gamsuwar Abokin Ciniki — Zinariya",
+    "award2": "Mafi kyawun Katin Mara Gani 2025",
+    "award3": "Lambar Kariyar Abokin Ciniki",
+    "verified": "Lamba da aka tabbatar"
+  },
+  "testimonials": {
+    "title": "JI DAGA BAKIN MASU AMFANI DA MU",
+    "trustedPrefix": "Amincewar sama da",
+    "count": "miliyan 25+",
+    "trustedSuffix": "masu amfani a duniya",
+    "from": "daga",
+    "t1Bold": "Manhaja mai ban mamaki. Biya cikin daƙiƙa",
+    "t1Text": "da rashin buƙatar kati na zahiri farin ciki ne.",
+    "t2Bold": "Katin ya sa biya ya zama sauƙi",
+    "t2Text": "Ban ƙara ɗaukar jaka",
+    "t3Bold": "Na yi amfani da shi cikin sauƙi a matsayin ɗalibin musaya.",
+    "t3Text": "Zan ba da shawarar sau goma.",
+    "a1": "Hadassah",
+    "a2": "Malachi",
+    "a3": "Tiffany",
+    "s1": "Shagon App",
+    "s2": "Shagon App",
+    "s3": "Trust pilot"
+  },
+  "join": {
+    "prefix": "KU HADU DA MUTANE MILIYAN 25",
+    "highlight": "GOVERN",
+    "suffix": "WAƊANDA KE SARRAFA KUƊINSU MAFI KYAU",
+    "create": "Ƙirƙiri asusunka",
+    "compare": "Kwatanta farashi"
+  },
+  "footer": {
+    "products": "Samfuran",
+    "company": "Kamfani",
+    "support": "Tallafi",
+    "legal": "Doka",
+    "cards": "Kati",
+    "payments": "Biya",
+    "pricing": "Farashi",
+    "about": "Game da mu",
+    "careers": "Ayyuka",
+    "press": "Jarida",
+    "help": "Cibiyar taimako",
+    "contact": "Tuntuɓe mu",
+    "security": "Tsaro",
+    "privacy": "Sirri",
+    "terms": "Sharuɗɗa",
+    "uk": "Birtaniya",
+    "legalLinks": [
+      "Sharuɗɗan yanar gizo",
+      "Yarjejeniyoyin doka",
+      "Ƙorafi",
+      "Sirri",
+      "Sirrin bayanai",
+      "Raunin abokin ciniki"
+    ],
+    "disclosures": [
+      "Govern kamfanin biya da fasahar kuɗi ne na duniya da ke ba da mafita na biyan kuɗi iri-iri ga mutane da kasuwanci a duniya.",
+      "Govern Ltd tana Birtaniya kuma ita ce mai alamar Govern da alamomin kasuwanci, waɗanda aka ba rassanta da abokan hulɗa lasisi inda ya dace.",
+      "Govern ba banki ba ce. Bankunan abokan hulɗa masu lasisi ne ke ba da hidimar banki a yankuna daban-daban. Kuɗin da aka ajiye da bankunan abokan hulɗa na iya samun kariya ƙarƙashin tsarin inshorar ajiya na gida, gwargwadon sharuɗɗa.",
+      "Rufin doka, kariya, da tsaro sun bambanta da ƙasa da samfur. Da fatan za a duba sharuɗɗa, bayani, da bayanan doka kafin amfani da hidimominmu."
+    ]
+  }
+}
